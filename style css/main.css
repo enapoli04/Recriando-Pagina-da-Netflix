@@ -1,0 +1,119 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --branca:white;
+
+}
+
+*{/*zera configurações que vem de padrão*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*limite da caixa*/
+}
+
+/*elementos base*/
+
+body{
+    background-color:var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display:flex ;/*alinhar os elementos em tela*/
+    flex-direction: row;/*necessário declarar*/
+    align-items: center;/*alinha os elementos no centro*/
+    justify-content: space-between;/*cria um espaço entre o h2 e o nav*/
+
+}
+
+header .logo{
+    margin-left: 12px;/*coloca o testo mais para a esquerda*/
+    color: var(--vermelho);
+    font-family: 'arial black', times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none; /*retira as linhas do texto*/
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*altera a cor do texto conforme passa o mouse*/
+    color:#afff;
+
+}
+
+/*filme principal*/
+
+main .filme-principal{
+    font-size: 16px;
+    background: url('img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+
+    color: var(--branca);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+main .filme-principal .descricao{
+    margin-top: 20px;
+    margin-bottom: 90px;  
+
+}
+
+main .filme-principal .título{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+main .botao{
+    background-color: rgba(0,0,0.50);
+    border:none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 10px;
+
+    cursor: pointer; /*muda o ponteiro do mouse*/
+    transition: .3s ease all;
+}
+
+main .botao:hover{
+    background-color:white;
+    color:black;
+    
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 8px;
+}
+
+.filme-principal .container{
+    width:50%;
+}
+
+.box-filme{
+    height: 100%;
+    width:100%;
+    display: block;
+
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+   
+   
+    
+}
